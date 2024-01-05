@@ -1,0 +1,21 @@
+﻿FormatVersion: 7
+Name: "Afterlife 1"
+Script: "Afterlife"
+Multithreaded: No
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  9476aa1ac84d4ca285b68a2df8c4ee4a:
+    Name: "Background"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  28b1729e4a0f42b0b7ff0e7b9d6ec229:
+    Name: "Foreground"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

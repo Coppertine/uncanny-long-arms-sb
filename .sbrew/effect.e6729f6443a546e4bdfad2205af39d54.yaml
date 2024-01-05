@@ -1,0 +1,26 @@
+﻿FormatVersion: 7
+Name: "Intro 1"
+Script: "Intro"
+Multithreaded: No
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  e8d45d1a4671428b8c4f432fd49a73b9:
+    Name: "TOP LAYER"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  f1e73f0a457a401496543da34838248f:
+    Name: ""
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  8f6c383799c34cffa321fbbdbd528eeb:
+    Name: "Foreground"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

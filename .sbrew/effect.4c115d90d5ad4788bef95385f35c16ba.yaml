@@ -1,0 +1,61 @@
+﻿FormatVersion: 7
+Name: "Lyrics 1"
+Script: "Lyrics"
+Multithreaded: No
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  41eed9c0b245447f9d924628af030dca:
+    Name: "Disclaimer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  454dfa8c5e844abdb5d4957493c00c5a:
+    Name: "Intro"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  c976dd7ddbc24b169825f46ab74713b9:
+    Name: "Touch 1"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  c948ca492c13415695675a8c8b2d854d:
+    Name: "Credits"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  ac582a854bf545beb5f2663db4eaea71:
+    Name: "Touch 2"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  2f09c9f302cd4b04b6a7db7319f7afbd:
+    Name: "Verse"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  74ccec76a41848e7bff60215bf5bc3e0:
+    Name: "Afterlife"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  85b0bf0795fe4a4c8dc4e4fe6b133f4c:
+    Name: "Inlaws - Behind Water"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  82432078f4664cc2819860dbf2709b95:
+    Name: "Inlaws - Above Water"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  7b80dee198994bb0b8997aa06f953328:
+    Name: "Pre-Inlaws"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

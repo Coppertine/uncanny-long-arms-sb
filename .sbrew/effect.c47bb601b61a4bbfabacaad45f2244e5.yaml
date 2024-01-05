@@ -1,0 +1,21 @@
+﻿FormatVersion: 7
+Name: "Verse 1"
+Script: "Verse"
+Multithreaded: No
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  9490f45d6a384c87a649eadbdd223144:
+    Name: "Arm"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  d47f1d8ce9a14d7d94d9f0fd374c6d4c:
+    Name: "Background"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

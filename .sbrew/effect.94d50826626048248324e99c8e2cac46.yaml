@@ -1,0 +1,78 @@
+﻿FormatVersion: 7
+Name: "DebugVisual 1"
+Script: "DebugVisual"
+Multithreaded: No
+Config:
+  CenterPlayfieldDot:
+    Type: "System.Boolean"
+    Value: "True"
+    DisplayName: "Center Playfield Dot"
+    BeginsGroup: "Centre Playfield Dot"
+  PlayfieldColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0.7599999,1,1"
+    DisplayName: "Playfield Color"
+  CenterScreenDot:
+    Type: "System.Boolean"
+    Value: "True"
+    DisplayName: "Center Screen Dot"
+    BeginsGroup: "Centre Screen Dot"
+  ScreenColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0.535,0.00534974,1"
+    DisplayName: "Screen Color"
+  GridLineScreens:
+    Type: "System.Boolean"
+    Value: "True"
+    DisplayName: "Grid Line Screens"
+    BeginsGroup: "Grid Lines Screen"
+  XGridScreen:
+    Type: "System.Int32"
+    Value: "2"
+    DisplayName: "X Grid Screen"
+  YGridScreen:
+    Type: "System.Int32"
+    Value: "2"
+    DisplayName: "Y Grid Screen"
+  GridColorScreen:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0.1937999,0.57,1"
+    DisplayName: "Grid Color Screen"
+  GridLinePlayfields:
+    Type: "System.Boolean"
+    Value: "True"
+    DisplayName: "Grid Line Playfields"
+    BeginsGroup: "Grid Lines Playfield"
+  XGridPlayfield:
+    Type: "System.Int32"
+    Value: "2"
+    DisplayName: "X Grid Playfield"
+  YGridPlayfield:
+    Type: "System.Int32"
+    Value: "2"
+    DisplayName: "Y Grid Playfield"
+  GridColorPlayfield:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "1,0,0,1"
+    DisplayName: "Grid Color Playfield"
+  RemoveBackground:
+    Type: "System.Boolean"
+    Value: "False"
+    DisplayName: "Remove Background"
+    BeginsGroup: "Background"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  a9bc1d8bd7b74612a74d000903286305:
+    Name: ""
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: No
+  2159c1f28e4f45ffa2835db717c26965:
+    Name: "DebugVisual"
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: No
