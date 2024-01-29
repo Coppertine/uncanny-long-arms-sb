@@ -39,6 +39,8 @@ https://osu.ppy.sh/beatmapsets/2094154#osu/4390731
 https://github.com/Coppertine/uncanny-long-arms-sb/assets/37494321/fb7fdf2b-de16-4a5b-9855-e7bd39eedb93
 - `horseshoe.svg/.psd` - underscores / watersockets logo, taken from [secretariat.tech](https://secretariat.tech/)
 - `LONGHAND.kra/psd` - rotoscoped hand, with extended arm, made for `sb/arms`
+- `ref2.png` - template for `what is happening to me` sections
+- `scribbles.psd` - `sb/scribble/`
 - 
 
 ## Acknowledgements
