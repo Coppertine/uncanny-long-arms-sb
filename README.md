@@ -6,6 +6,9 @@ https://osu.ppy.sh/beatmapsets/2094154#osu/4390731
 ## Script Credits
 
 ## Script Inspirations
+[Breaks](https://github.com/Coppertine/uncanny-long-arms-sb/blob/master/Breaks.cs) - [XaaaCi. - TheDuckMask](https://osu.ppy.sh/beatmapsets/999260#osu/2089944)
+
+Inlaws - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mania/3019728)
 
 ## Script Times
 - -00:10:00 - 00:00:00 - Lyrics.cs ([Lines](https://github.com/Coppertine/uncanny-long-arms-sb/blob/master/Lyrics.cs#L60-L190))
