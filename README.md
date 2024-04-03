@@ -8,7 +8,9 @@ Due to some feedback about lag with the ending section, I went ahead to downscal
 
 ## Script Inspirations
 [Breaks](https://github.com/Coppertine/uncanny-long-arms-sb/blob/master/Breaks.cs) - [XaaaCi. - TheDuckMask](https://osu.ppy.sh/beatmapsets/999260#osu/2089944)
+
 [Verse](https://github.com/Coppertine/uncanny-long-arms-sb/blob/d2b999e4bf38df993a96ca75c3bd413398382435/Verse.cs#L19-L105) - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mania/3019728) (00:02:885 - )
+
 Inlaws - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mania/3019728) (03:41:863 - )
 
 ## Script Times
