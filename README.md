@@ -3,12 +3,13 @@ A "simple" storyboard made using Storybrew (using Storybrew3D, therefore requiri
 
 https://osu.ppy.sh/beatmapsets/2094154#osu/4390731
 
-## Script Credits
+## Low Quality version (in Releases on the Right)
+Due to some feedback about lag with the ending section, I went ahead to downscale almost all of the sprites to prevent an overload to the GPU's VRam.
 
 ## Script Inspirations
 [Breaks](https://github.com/Coppertine/uncanny-long-arms-sb/blob/master/Breaks.cs) - [XaaaCi. - TheDuckMask](https://osu.ppy.sh/beatmapsets/999260#osu/2089944)
-
-Inlaws - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mania/3019728)
+[Verse](https://github.com/Coppertine/uncanny-long-arms-sb/blob/d2b999e4bf38df993a96ca75c3bd413398382435/Verse.cs#L19-L105) - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mania/3019728) (00:02:885 - )
+Inlaws - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mania/3019728) (03:41:863 - )
 
 ## Script Times
 - -00:10:00 - 00:00:00 - Lyrics.cs ([Lines](https://github.com/Coppertine/uncanny-long-arms-sb/blob/master/Lyrics.cs#L60-L190))
@@ -41,10 +42,13 @@ Inlaws - [Lowermost Revolt - Partyu](https://osu.ppy.sh/beatmapsets/1466485#mani
   
 https://github.com/Coppertine/uncanny-long-arms-sb/assets/37494321/fb7fdf2b-de16-4a5b-9855-e7bd39eedb93
 - `horseshoe.svg/.psd` - underscores / watersockets logo, taken from [secretariat.tech](https://secretariat.tech/)
-- `LONGHAND.kra/psd` - rotoscoped hand, with extended arm, made for `sb/arms`
+- `LONGHAND.kra/.psd` - rotoscoped hand, with extended arm, made for `sb/arms`
 - `ref2.png` - template for `what is happening to me` sections
 - `scribbles.psd` - `sb/scribble/`
-- 
+- `spotlight.blend/.blend1` - `sb/light`
+- `textstuff.psd` - `sb/f/toes` / `sb/f/`
+- `water.blend/.blend1` - `sb/water`
 
 ## Acknowledgements
 underscores horseshoe and secretariat colour scheme belongs to underscores.
+Used font: Montserrat
