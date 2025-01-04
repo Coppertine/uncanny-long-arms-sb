@@ -93,6 +93,9 @@ namespace StorybrewScripts
 
             // attempted pass-sound, but osu can't play skinnable sounds??
 
+            // add little low quality reminder
+            
+
             OsbSprite header = GetLayer("Disclaimer").CreateSprite(lyricitalicFont.GetTexture("for the best playing experience:").Path, OsbOrigin.Centre, new Vector2(320, 160));
             header.Fade(t - 200, t, 0, 1);
             header.Scale(t, 0.2);
@@ -150,6 +153,17 @@ namespace StorybrewScripts
             epilepsy2.Fade(t - 200, t, 0, 0.3);
             epilepsy2.Scale(t, 0.1);
             epilepsy2.Fade(et - 200, et, 0.3, 0);
+
+            OsbSprite low_quality_reminder = GetLayer("Disclaimer").CreateSprite(lyricitalicFont.GetTexture("you are currently playing low quality mode,").Path, OsbOrigin.Centre, new Vector2(320, 365));
+            low_quality_reminder.Fade(t-200,t,0,1);
+            low_quality_reminder.Scale(t-200,0.1);
+            low_quality_reminder.Fade(et-200,et,1,0);
+             
+            OsbSprite low_quality_reminder2 = GetLayer("Disclaimer").CreateSprite(lyricitalicFont.GetTexture("some sprites might look off").Path, OsbOrigin.Centre, new Vector2(320, 380));
+            low_quality_reminder2.Fade(t-200,t,0,1);
+            low_quality_reminder2.Scale(t-200,0.1);
+            low_quality_reminder2.Fade(et-200,et,1,0);
+
 
             GenerateLazerSettings();
         }
@@ -1374,7 +1388,7 @@ namespace StorybrewScripts
             GaussianBlur l3Blur = new GaussianBlur(GetMapsetBitmap(lyricFont.GetTexture("tell me if it's not on purpose").Path, false));
             GaussianBlur l4Blur = new GaussianBlur(GetMapsetBitmap(lyricFont.GetTexture("why'd you do it again").Path, false));
             GaussianBlur l5Blur = new GaussianBlur(GetMapsetBitmap(lyricFont.GetTexture("just admit it").Path, false));
-            GaussianBlur l6Blur = new GaussianBlur(GetMapsetBitmap(lyricFont.GetTexture("you don't have a world you're up against").Path, false));
+            GaussianBlur l6Blur = new GaussianBlur(GetMapsetBitmap(lyricFont.GetTexture("you don't have a world that you're up against").Path, false));
 
             int radius = 5;
             var l1BlurImage = l1Blur.Process(radius);
@@ -1477,7 +1491,7 @@ namespace StorybrewScripts
             l5.Move(281346,288998, new Vector2(-12, 166), new Vector2(15, 166));
             l5.Fade(281346, 281527,0, 1);
             l5.Fade(288781, 288998, 1, 0);
-            l5.Scale(281346, 0.23f);
+            l5.Scale(281346, 0.23f); 
             l5.Color(281346, Color4.DarkSlateBlue);
 
             l5Mirror.Move(281346,288998, new Vector2(-12, 340), new Vector2(0, 340));
@@ -1487,7 +1501,7 @@ namespace StorybrewScripts
             l5Mirror.ScaleVec(281346, 0.23f, 0.15);
             l5Mirror.Color(281346, Color4.DarkSlateBlue);
 
-            OsbSprite l6 = aboveWater.CreateSprite(lyricFont.GetTexture("you don't have a world you're up against").Path, OsbOrigin.BottomCentre, new Vector2(403, 219));
+            OsbSprite l6 = aboveWater.CreateSprite(lyricFont.GetTexture("you don't have a world that you're up against").Path, OsbOrigin.BottomCentre, new Vector2(403, 219));
 
             l6.Move(282768,288998, new Vector2(403, 219), new Vector2(415, 219));
             l6.Fade(282768, 282861,0, 1);

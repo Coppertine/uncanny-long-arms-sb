@@ -23,10 +23,10 @@ namespace StorybrewScripts
 		    OsbSprite scribbleG = GetLayer("Background").CreateAnimation("sb/scribble/.png", 4, 484, OsbLoopType.LoopForever);
 		    OsbSprite scribbleB = GetLayer("Background").CreateAnimation("sb/scribble/.png", 4, 384, OsbLoopType.LoopForever);
 
-            scribbleR.Scale(125362, 0.444444f);
-            scribbleG.Scale(125362, 0.444444f);
+            // scribbleR.Scale(125362, 0.444444f);
+            // scribbleG.Scale(125362, 0.444444f);
             scribbleG.FlipH(125362);
-            scribbleB.Scale(125362, 0.444444f);
+            // scribbleB.Scale(125362, 0.444444f);
 
             scribbleR.Fade(125362, 0.3);
             scribbleG.Fade(125362, 0.3);
@@ -67,8 +67,8 @@ namespace StorybrewScripts
             // Discarded idea
             //armTunnel();
             
-            OsbAnimation arms = GetLayer("Background").CreateAnimation("sb/arms/.png",8, (130817 - 129794) / 8, OsbLoopType.LoopOnce);
-            arms.Scale(129794, 0.44444444f);
+            OsbAnimation arms = GetLayer("Background").CreateAnimation("sb/arms/.jpg",8, (130817 - 129794) / 8, OsbLoopType.LoopOnce);
+            // arms.Scale(129794, 0.44444444f);
             arms.Additive(129794);
             arms.Fade(129794, 1);
             arms.Fade(130817, 0);

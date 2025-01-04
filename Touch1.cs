@@ -24,7 +24,7 @@ namespace StorybrewScripts
             
             OsbAnimation scribble = GetLayer("Scribble").CreateAnimation("sb/scribble/.png", 4, Beatmap.GetTimingPointAt(43544).BeatDuration - 200, OsbLoopType.LoopForever);
 
-            scribble.Scale(48999, 0.444444f);
+            // scribble.Scale(48999, 0.444444f);
             scribble.Fade(48999, 53771, 0, 0.2);
             scribble.Fade(53771, 0);
             scribble.Fade(54453, 59226, 0.2, 0.4);
@@ -33,9 +33,9 @@ namespace StorybrewScripts
             scribble.Fade(69453, 0);
 
             // WHAT IS HAPPENING TO ME
-            scribbleR.Scale(65874, 0.5f);
-            scribbleG.Scale(65874,0.5f);
-            scribbleB.Scale(65874, 0.5f);
+            scribbleR.Scale(65874, 1.1f);
+            scribbleG.Scale(65874, 1.1f);
+            scribbleB.Scale(65874, 1.1f);
             scribbleR.Fade(65874,66385, 0, 0.4);
             scribbleG.Fade(65874,66385, 0, 0.4);
             scribbleG.FlipH(65874);

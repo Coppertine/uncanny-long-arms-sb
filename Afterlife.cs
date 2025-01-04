@@ -58,7 +58,7 @@ namespace StorybrewScripts
             OsbSprite flashlight = GetLayer("Foreground").CreateSprite("sb/flashlight.png");
             flashlight.Fade(174453 , 1);
             flashlight.Fade(174453 + 1500, 174453 + 2000, 1, 0);
-            flashlight.Scale(174453, 174453 + 2000, 0.444, 8);
+            flashlight.Scale(174453, 174453 + 2000, 1.4, 20);
         
             OsbAnimation noise = GetLayer("Foreground").CreateAnimation("sb/noise/.png", 4, 33.3333, OsbLoopType.LoopForever);
             noise.Fade(242464, 264623, 0, 1);
@@ -97,7 +97,8 @@ namespace StorybrewScripts
             waves.PositionX.Add(174453, 0);
             waves.PositionY.Add(174453, 0);
             waves.PositionZ.Add(174453, 20);
-
+            waves.ScaleX.Add(174453, 1080 / 480.0f);
+            waves.ScaleY.Add(174453, 1080 / 480.0f);
             camera.TargetPosition.Add(174453, new Vector3(0, 0, 0));
             // camera.TargetPosition.Add(174453 + 10000, new Vector3(10,10,2));
             for(int t = 174453 + 5034; t < 264453; t += 10502) {

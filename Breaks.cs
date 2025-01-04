@@ -23,11 +23,11 @@ namespace StorybrewScripts
 		OsbSprite scribbleB = GetLayer("Scribble").CreateAnimation("sb/scribble/.png", 4, 206, OsbLoopType.LoopForever);
 		OsbSprite scribbleOverlay = GetLayer("Scribble - Overlay").CreateAnimation("sb/scribble/.png", 4, 105, OsbLoopType.LoopForever);
         
-        scribbleR.Scale(70817, 0.444444f);
-        scribbleG.Scale(70817, 0.444444f);
+        // scribbleR.Scale(70817, 0.444444f);
+        // scribbleG.Scale(70817, 0.444444f);
         scribbleG.FlipH(70817);
-        scribbleB.Scale(70817, 0.444444f);
-        scribbleOverlay.Scale(70817, 0.444444f);
+        // scribbleB.Scale(70817, 0.444444f);
+        // scribbleOverlay.Scale(70817, 0.444444f);
 
         scribbleOverlay.Fade(70817, 1f);
         scribbleR.Fade(70817, 1);

@@ -1,5 +1,6 @@
 using OpenTK;
 using OpenTK.Graphics;
+using StorybrewCommon.Animations;
 using StorybrewCommon.Mapset;
 using StorybrewCommon.Scripting;
 using StorybrewCommon.Storyboarding;
@@ -37,8 +38,32 @@ namespace StorybrewScripts
 
         public override void Generate()
         {
+            // KeyframedValue<float> heightKeyframe = new KeyframedValue<float>(null);
+
+            // var fftTimeStep = Beatmap.GetTimingPointAt(266978).BeatDuration / 4;
+            // var fftOffset = fftTimeStep * 0.2;
+            // for (var time = (double)266978; time < 272294; time += fftTimeStep)
+            // {
+            //     var fft = GetFft(time + fftOffset, 5, null, OsbEasing.InOutExpo, 16000);
+
+            //         var height = (float)Math.Log10(1 + fft[0] * 600) * 10;
+            //         if (height < 0.4f) height = 0.04f;
+            //         if(height > 1f) height = 1f;
+
+            //         heightKeyframe.Add(time, height);
+
+            // }
             OsbSprite voiceSun = GetLayer("Background").CreateSprite("sb/light.png");
             voiceSun.Scale(266978,0.2);
+            // var keyframes = heightKeyframe;
+            //     keyframes.Simplify1dKeyframes(0.2, h => h);
+            
+            // keyframes.ForEachPair(
+            //     (start, end) => {
+            //         Log(start.Value);
+            //         voiceSun.Fade(start.Time, end.Time, start.Value, end.Value);
+            //     }
+            // );
             voiceSun.Fade(OsbEasing.OutExpo,266978, 267180, 0, 0.7);
             voiceSun.Fade(267180,267409,0.7,0.4);
             voiceSun.Fade(OsbEasing.OutExpo,267409,267521, 0.4, 0.64);
@@ -85,7 +110,7 @@ namespace StorybrewScripts
 
             // FontTexture line1Texture = lyricFont.GetTexture("How did you get everyone to think that you were depressed?");
             OsbSprite skybg = gradientSkyLayer.CreateSprite("sb/sky.png", OsbOrigin.BottomCentre, new Vector2(320, 280));
-            skybg.Scale(272634, 0.444444f);
+            // skybg.Scale(272634, 0.444444f);
             skybg.Fade(272634, 1);
             skybg.Fade(310305, 310816, 1, 0);
             double t = 400;
@@ -99,7 +124,7 @@ namespace StorybrewScripts
             // skybgflip.Fade(283544, 283544 + t, 1, 0.8);
             skybgflip.Fade(OsbEasing.OutExpo, 288998, 288998 + t, 1, 0.5);
             skybgflip.Color(288998, 310816, Color4.White, Color4.PaleVioletRed);
-            skybgflip.Scale(272634, 0.444444f);
+            // skybgflip.Scale(272634, 0.444444f);
 
 
             // Clouds?
@@ -123,9 +148,9 @@ namespace StorybrewScripts
             scribbleR.Color(288998, Color4.Red);
             scribbleG.Color(288998, Color4.Green);
             scribbleB.Color(288998, Color4.Blue);
-            scribbleR.Scale(288998, 0.444444f);
-            scribbleG.Scale(288998, 0.444444f);
-            scribbleB.Scale(288998, 0.444444f);
+            // scribbleR.Scale(288998, 0.444444f);
+            // scribbleG.Scale(288998, 0.444444f);
+            // scribbleB.Scale(288998, 0.444444f);
             
   
             scribbleR.Fade(OsbEasing.OutExpo, 288998, 288998 + t, 1, 0.5);
@@ -155,9 +180,9 @@ namespace StorybrewScripts
             scribbleRMirror.Color(288998, Color4.Red);
             scribbleGMirror.Color(288998, Color4.Green);
             scribbleBMirror.Color(288998, Color4.Blue);
-            scribbleRMirror.Scale(288998, 0.444444f);
-            scribbleGMirror.Scale(288998, 0.444444f);
-            scribbleBMirror.Scale(288998, 0.444444f);
+            // scribbleRMirror.Scale(288998, 0.444444f);
+            // scribbleGMirror.Scale(288998, 0.444444f);
+            // scribbleBMirror.Scale(288998, 0.444444f);
             
             scribbleRMirror.Fade(OsbEasing.OutExpo, 288998, 288998 + t, 1, 0.2);
             scribbleGMirror.Fade(OsbEasing.OutExpo, 288998, 288998 + t, 1, 0.2);
@@ -186,24 +211,25 @@ namespace StorybrewScripts
             OsbSprite regularCloud = cloudsLayer.CreateSprite("sb/cloud/" + filePath);
             OsbSprite mirrorCloud = cloudsLayer.CreateSprite("sb/cloud/b" + filePath);
             
-            double scale = Random(0.05, 0.2);
+            double scale = Random(0.25, 1);
             bool flipH = Random(1.0f) > 0.5;
             Log(scale);
             float posY = 240;
             float mirrorY = 240;
-            if(scale > 0.001 && scale <= 0.1)
+            float scaleUp = 100 / 20;
+            if(scale > 0.001 * scaleUp && scale <= 0.1* scaleUp)
             {
                 posY = 190;
                 mirrorY = 333;
             }
 
-            if(scale > 0.1 && scale <= 0.15)
+            if(scale > 0.1* scaleUp && scale <= 0.15* scaleUp)
             {
                 posY = 168;
                 mirrorY = 358;
             }
 
-            if(scale > 0.15 && scale < 0.3)
+            if(scale > 0.15* scaleUp && scale < 0.3* scaleUp)
             {
                 posY = 68;
                 mirrorY = 428;

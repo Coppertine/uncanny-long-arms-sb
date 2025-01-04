@@ -19,7 +19,7 @@ namespace StorybrewScripts
 		    
 
             OsbSprite horseshoeSpaz = GetLayer("").CreateSprite("sb/horseshoe.png");
-            horseshoeSpaz.Scale(163544, 0.05);
+            // horseshoeSpaz.Scale(163544, 0.05);
             horseshoeSpaz.Fade(163544, 0.4);
             horseshoeSpaz.Fade(167976, 0);
 
@@ -29,7 +29,7 @@ namespace StorybrewScripts
             }
 
             OsbSprite horseshoe = GetLayer("").CreateSprite("sb/horseshoe.png");
-            horseshoe.Scale(163544, 0.05);
+            // horseshoe.Scale(163544, 0.05);
             horseshoe.Fade(163544, 1);
             horseshoe.Fade(OsbEasing.OutExpo, 167976, 168828, 1, 0);
 
